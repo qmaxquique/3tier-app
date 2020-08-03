@@ -1,2 +1,4 @@
 ---
 # vars file for haproxy
+load_balancer_packages:
+  - haproxy
