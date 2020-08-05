@@ -21,6 +21,12 @@
     dest: /usr/share/tomcat/webapps/ROOT/index.html
     mode: 0644
 
+- name: Create symlink to resolve tomcat java issue
+  file:
+    src: /usr/share/java/tomcat/extras/tomcat-juli.jar
+    dest: /usr/share/tomcat/bin/tomcat-juli.jar
+    state: link
+
 - name: Start Tomcat
   service:
     name: "{{ app_server_service }}"
