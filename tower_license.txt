@@ -1,0 +1,12 @@
+{ 
+    "eula_accepted": true, 
+    "company_name": "Red Hat, Inc", 
+    "contact_email": "ankay@redhat.com", 
+    "contact_name": "Tony Kay", 
+    "instance_count": 50, 
+    "license_date": 1640926800, 
+    "license_key": "3b401b6d910349c3dae2f122d2d75f9354c8e3adbb7eaf46f08e7623e2061133", 
+    "license_type": "enterprise", 
+    "subscription_name": "Ansible Tower by Red Hat, Standard (50 Managed Nodes)", 
+    "trial": false 
+} 
