@@ -1,0 +1,20 @@
+[jumpbox]
+control.37fc.example.opentlc.com
+
+[load_balancers]
+frontend1 ansible_host=frontend1.37fc.internal
+
+[app_servers]
+app1 ansible_host=app1.37fc.internal
+app2 ansible_host=app2.37fc.internal
+
+[database_servers]
+appdb1 ansible_host=appdb1.37fc.internal
+
+[internal:children]
+load_balancers
+app_servers
+database_servers
+
+[internal:vars]
+GUID="{{ lookup('env', 'GUID') }}"
